@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzureBot - Moderation Commands</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #b30000, #f8e6e6);
+            color: #2c2c2c;
+        }
+
+        header {
+            background-color: #b30000;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 1.5em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .container h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #b30000;
+        }
+
+        .container p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        button {
+            background-color: #b30000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #990000;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: #b30000;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        footer h3 {
+            margin: 0 0 5px 0;
+        }
+
+        .icon {
+            margin-top: 20px;
+        }
+
+        .icon i {
+            font-size: 2em;
+            margin: 0 10px;
+            color: #b30000;
+        }
+
+        .icon i:hover {
+            color: #990000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        AzureBot - Discord Moderation Helper
+    </header>
+
+    <div class="container">
+        <h1>Welcome to AzureBot</h1>
+        <p>
+            AzureBot is here to help you manage your Discord server efficiently and effectively. 
+            It comes with a suite of moderation commands, including:
+        </p>
+        <ul style="text-align: left; display: inline-block; margin-top: 20px;">
+            <li><b>!ban @user</b>: Ban a user from the server.</li>
+            <li><b>!kick @user</b>: Kick a user out of the server.</li>
+            <li><b>!mute @user</b>: Temporarily mute a user.</li>
+            <li><b>!warn @user</b>: Issue a warning to a user.</li>
+            <li><b>!clear [number]</b>: Delete a specified number of messages from a channel.</li>
+        </ul>
+        <button onclick="showMessage()">Learn More</button>
+        <a href="https://discord.com/oauth2/authorize?client_id=1327912260571762771&permissions=8&integration_type=0&scope=bot">
+            <button>Invite Bot</button>
+        </a>
+
+        <div class="icon">
+            <i class="fas fa-user-shield" title="Moderation"></i>
+            <i class="fas fa-ban" title="Ban"></i>
+            <i class="fas fa-comments" title="Chat"></i>
+        </div>
+    </div>
+
+    <footer>
+        <h3>AzureBot</h3>
+        <p>Your friendly server moderator bot.</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert('AzureBot is packed with features to keep your server safe and organized!');
+        }
+    </script>
+</body>
+</html>
